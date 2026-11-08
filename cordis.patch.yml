@@ -1,0 +1,4 @@
+- insert:
+    - id: niupi-retry
+      name: '@oliver13211/dsh-plugin-niupi-retry'
+      config: {}

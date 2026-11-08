@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Infinite retry",
+    "description": "Retries failed model requests forever at a fixed, increasing, or zero interval until you stop it; configure the interval mode, excluded providers, and a temporary switch in Settings."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@oliver13211/dsh-plugin-niupi-retry",
+  "version": "1.0.0",
+  "description": "牛皮藓无限重试：模型报错后按固定/递增/不间隔间隔无限重试，直到用户终止；侧边栏设置菜单可配置间隔方式、不应用的供应商与临时开关，适用于任何模型调用",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oliver13211/dsh-plugin-niupi-retry.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "retry",
+    "llm",
+    "agent"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "vendor/**",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
